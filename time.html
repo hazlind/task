@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>timestring</title>
+</head>
+<body>
+
+<div class="clock">
+<script>
+function display() {
+    let x = new Date().toLocaleTimeString();
+    document.write(x)
+   setTimeout(display, 100);
+}
+display();
+
+    /*function displayTime()
+    {
+        var elt= document.getElementById("clock");
+        var now= new Date();
+        elt.innerHTML = now.toLocaleTimeString();
+        setTimeout(displayTime(),100)
+    }*/
+</script>
+</div>
+</body>
+</html>
